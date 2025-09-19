@@ -17,6 +17,7 @@ export default function Header() {
          <Link to="/profile">Profile</Link>
       )}
       &nbsp; &nbsp;|
+      <Link to="/home2">Home2</Link>
     </div>
   );
 }

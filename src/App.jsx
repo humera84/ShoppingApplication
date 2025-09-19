@@ -12,6 +12,8 @@ import Cart from "./Components/Cart";
 import Footer from "./Components/Footer";
 import Profile from "./Components/Profile";
 import Home from "./Components/Home";
+import Home2 from "./Components/Home2";
+
 export const AppContext = createContext();
 function App() {
   const [count, setCount] = useState(0);
@@ -47,6 +49,7 @@ function App() {
             <Route path="register" element={<Register />}></Route>
             <Route path="cart" element={<Cart />}></Route>
             <Route path="profile" element={<Profile />}></Route>
+            <Route path="home2" element={<Home2 />}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>
