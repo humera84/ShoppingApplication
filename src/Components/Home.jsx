@@ -51,18 +51,21 @@ export default function Home(props) {
   const products = [
     {
       id: 1,
+      image:"/images/1.png",
       name: "Product 1",
       desc: "This is the description of Product 1",
       price: 45,
     },
     {
       id: 2,
+      image:"/images/2.png",
       name: "Product 2",
       desc: "This is the description of Product 2",
       price: 40,
     },
     {
       id: 3,
+      image:"/images/3.png",
       name: "Product 3",
       desc: "This is the description of Product 3",
       price: 50,
@@ -84,6 +87,7 @@ export default function Home(props) {
       <div className="row">
         {products.map((product) => (
           <div key={product.id}>
+            <img src={product.image}></img>
             <h3>{product.name}</h3>
             <p>{product.desc}</p>
             <h4>{product.price}</h4>
